@@ -1,0 +1,10 @@
+body {
+  background-color: grey;
+  width: 800px;
+  height: 10px;
+}
+ul#chromeplex-nav,
+ul#chromeplex-nav li {
+  list-style: none;
+  display: inline;
+}

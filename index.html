@@ -1,7 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
+  <head>
+    <link rel="stylesheet/less" type="text/css" href="test.less">
+    <script type="text/javascript">
+    less = {
+        env: "development", // or "production"
+        async: false,       // load imports async
+        fileAsync: false,   // load imports async when in a page under
+                            // a file protocol
+        poll: 1000,         // when in watch mode, time in ms between polls
+        functions: {},      // user functions, keyed by name
+        dumpLineNumbers: "comments", // or "mediaQuery" or "all"
+        relativeUrls: false,// whether to adjust url's to be relative
+                            // if false, url's are already relative to the
+                            // entry less file
+    };
+    </script>
+    <script src="less.js" type="text/javascript"></script>
+  </head>
   <body>
-    hi
+    <ul id="chromeplex-nav">
+      <li id="chromeplex-nav-title">chromeplex</li>
+      <li class="chromeplex-tab">
+        <img src="http://www.psdgraphics.com/file/color-wheel-icon.jpg"/>
+        <span>Facebook</span>
+      </li>
+    </ul>
   </body>
 </html>
